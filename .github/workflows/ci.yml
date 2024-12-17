@@ -75,7 +75,7 @@ jobs:
           -o yaml --dry-run=client | kubectl apply -f -
 
       - name: Apply Kubernetes Deployment
-        run: kubectl apply -f deployment.yaml
+        run: kubectl apply -f src/main/java/es/upm/dit/apsv/deployment.yaml
 
       - name: Verify Kubernetes Deployment
         run: |
