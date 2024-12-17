@@ -69,9 +69,9 @@ jobs:
         run: |
           kubectl create secret docker-registry github-registry \
           --docker-server="ghcr.io" \
-          --docker-username="${{ secrets.DOCKER_USERNAME }}" \
+          --docker-username="ggoncalo02" \
           --docker-password="${{ secrets.PAT }}" \
-          --docker-email="${{ secrets.DOCKER_EMAIL }}" \
+          --docker-email="ggoncalo02@gmail.com" \
           -o yaml --dry-run=client | kubectl apply -f -
 
       - name: Apply Kubernetes Deployment
