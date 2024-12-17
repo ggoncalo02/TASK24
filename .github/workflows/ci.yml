@@ -64,7 +64,7 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v3
         with:
-          context:
+          context: .
           file: src/main/java/es/upm/dit/apsv/Dockerfile   
           push: true
           tags: ghcr.io/ggoncalo02/tos:latest
